@@ -8,7 +8,8 @@ BIN_DIR = bin
 
 # Rule: target name becomes the source and output name
 %:
-	$(CC) $(CFLAGS) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@
+	@$(CC) $(CFLAGS) $(SRC_DIR)/$@.c -o $(BIN_DIR)/$@
+	@echo "Successfully built $@ -> $(BIN_DIR)/$@"
 
 # Clean rule: remove all compiled binaries
 clean:
