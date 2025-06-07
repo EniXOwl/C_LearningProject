@@ -1,0 +1,10 @@
+# Ignore compiled binaries
+/bin/*
+!bin/.gitkeep
+
+# Ignore object files if added later
+*.o
+
+# Ignore temporary or backup files
+*~
+*.swp
